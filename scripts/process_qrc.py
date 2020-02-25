@@ -13,7 +13,7 @@ Delete the compiled files that you don't want to use manually after
 running this script.
 
 Links to understand those tools:
-
+`x
     - pyrcc4: http://pyqt.sourceforge.net/Docs/PyQt4/resources.html#pyrcc4
     - pyrcc5: http://pyqt.sourceforge.net/Docs/PyQt5/resources.html#pyrcc5
     - pyside-rcc: https://www.mankier.com/1/pyside-rcc

@@ -260,6 +260,8 @@ def main():
     app.exec_()
     _write_settings(window, QSettings)
 
+    return window
+
 
 def _write_settings(window, QSettings):
     """Get window settings and write it into a file."""

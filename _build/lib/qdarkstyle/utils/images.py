@@ -102,10 +102,7 @@ def create_palette_image(base_svg_path=SVG_PATH, path=IMAGES_PATH,
     Create palette image svg and png image on specified path.
     """
     # Needed to use QPixmap
-    try:
-        _ = QApplication([])
-    except:
-        pass
+    _ = QApplication([])
 
     base_palette_svg_path = os.path.join(base_svg_path, 'base_palette.svg')
     palette_svg_path = os.path.join(path, 'palette.svg')
@@ -147,10 +144,7 @@ def create_images(base_svg_path=SVG_PATH, rc_path=RC_PATH,
     """
 
     # Needed to use QPixmap
-    try:
-        _ = QApplication([])
-    except:
-        pass
+    _ = QApplication([])
 
     temp_dir = tempfile.mkdtemp()
     svg_fnames = [f for f in os.listdir(base_svg_path) if f.endswith('.svg')]
@@ -224,7 +218,6 @@ def create_images(base_svg_path=SVG_PATH, rc_path=RC_PATH,
     _logger.info("# RC links: %s" % num_rc_list)
     _logger.info("# RC links not in RC: %s" % len(rc_list))
     _logger.info("RC links not in RC: %s" % rc_list)
-
 
 
 def generate_qrc_file(resource_prefix='qss_icons', style_prefix='qdarkstyle'):

@@ -7,6 +7,17 @@ QDarkStylesheet
 The most complete dark stylesheet for Qt application (Qt4, Qt5, PySide,
 PySide2, PyQt4, PyQt5, QtPy, PyQtGraph, Qt.Py).
 
+## Building the code
+You will need python v3 installed
+
+```
+cd D:\dev\QDarkStyleSheet
+pip install -e .
+
+
+python scripts/process_qrc.py & python example/example.py 
+```
+
 
 Installation
 ------------
