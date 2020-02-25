@@ -12,6 +12,7 @@ class DarkPalette(object):
     # Color
     COLOR_BACKGROUND_LIGHT = '#494949'
     COLOR_BACKGROUND_NORMAL = '#444444'
+    COLOR_BACKGROUND_MID = '#373737'
     COLOR_BACKGROUND_DARK = '#2d2d2d'
 
     COLOR_FOREGROUND_LIGHT = '#F0F0F0'
@@ -50,6 +51,7 @@ class DarkPalette(object):
             'COLOR_BACKGROUND_LIGHT',
             'COLOR_BACKGROUND_NORMAL',
             'COLOR_BACKGROUND_DARK',
+            'COLOR_BACKGROUND_MID',
             'COLOR_FOREGROUND_LIGHT',
             'COLOR_FOREGROUND_NORMAL',
             'COLOR_FOREGROUND_DARK',
