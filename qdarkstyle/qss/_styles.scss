@@ -254,6 +254,10 @@ QGroupBox {
             }
         }
     }
+
+    QLabel {
+        background-color: $COLOR_BACKGROUND_LIGHT;
+    }
 }
 
 /* QRadioButton -----------------------------------------------------------
@@ -564,7 +568,7 @@ QScrollBar {
 
         &:horizontal {
             margin: 0px 0px 0px 0px;
-            border-image: url($PATH_RESOURCES + '/rc/arrow_right_disabled.png');
+            border-image: url($PATH_RESOURCES + '/rc/arrow_right.png');
             height: 12px;
             width: 12px;
             subcontrol-position: right;
@@ -582,7 +586,7 @@ QScrollBar {
 
         &:vertical {
             margin: 3px 0px 3px 0px;
-            border-image: url($PATH_RESOURCES + '/rc/arrow_down_disabled.png');
+            border-image: url($PATH_RESOURCES + '/rc/arrow_down.png');
             height: 12px;
             width: 12px;
             subcontrol-position: bottom;
@@ -602,7 +606,7 @@ QScrollBar {
     &::sub-line {
         &:horizontal {
             margin: 0px 3px 0px 3px;
-            border-image: url($PATH_RESOURCES + '/rc/arrow_left_disabled.png');
+            border-image: url($PATH_RESOURCES + '/rc/arrow_left.png');
             height: 12px;
             width: 12px;
             subcontrol-position: left;
@@ -620,7 +624,7 @@ QScrollBar {
 
         &:vertical {
             margin: 3px 0px 3px 0px;
-            border-image: url($PATH_RESOURCES + '/rc/arrow_up_disabled.png');
+            border-image: url($PATH_RESOURCES + '/rc/arrow_up.png');
             height: 12px;
             width: 12px;
             subcontrol-position: top;

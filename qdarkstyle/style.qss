@@ -278,6 +278,10 @@ QGroupBox::indicator:checked:disabled {
   image: url(":/qss_icons/rc/checkbox_checked_disabled.png");
 }
 
+QGroupBox QLabel {
+  background-color: #494949;
+}
+
 /* QRadioButton -----------------------------------------------------------
 
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qradiobutton
@@ -516,29 +520,25 @@ QScrollArea QWidget QWidget:disabled {
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qscrollbar
 
 --------------------------------------------------------------------------- */
-QScrollBar {
-  border: red 2px solid;
-}
-
 QScrollBar:horizontal {
   height: 16px;
   margin: 2px 16px 2px 16px;
-  border: #2d2d2d;
-  border-radius: 0;
+  border: 1px solid #444444;
+  border-radius: 2px;
   background-color: #2d2d2d;
 }
 
 QScrollBar:vertical {
   background-color: #2d2d2d;
-  width: 4px;
+  width: 16px;
   margin: 16px 2px 16px 2px;
-  border: 1px solid #2d2d2d;
-  border-radius: 16px;
+  border: 1px solid #444444;
+  border-radius: 2px;
 }
 
 QScrollBar::handle:horizontal {
   background-color: #5d5d5d;
-  border: #AAAAAA;
+  border: 1px solid #444444;
   border-radius: 2px;
   min-width: 8px;
 }
@@ -556,7 +556,7 @@ QScrollBar::handle:horizontal:focus {
 
 QScrollBar::handle:vertical {
   background-color: #5d5d5d;
-  border: 1px solid #2d2d2d;
+  border: 1px solid #444444;
   min-height: 8px;
   border-radius: 2px;
 }
@@ -579,7 +579,6 @@ QScrollBar::add-line:horizontal {
   width: 12px;
   subcontrol-position: right;
   subcontrol-origin: margin;
-  background-color: #2d2d2d;
 }
 
 QScrollBar::add-line:horizontal:hover, QScrollBar::add-line:horizontal:on {
@@ -597,7 +596,6 @@ QScrollBar::add-line:vertical {
   width: 12px;
   subcontrol-position: bottom;
   subcontrol-origin: margin;
-  background-color: #2d2d2d;
 }
 
 QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on {
@@ -615,7 +613,6 @@ QScrollBar::sub-line:horizontal {
   width: 12px;
   subcontrol-position: left;
   subcontrol-origin: margin;
-  background-color: #2d2d2d;
 }
 
 QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on {
@@ -633,7 +630,6 @@ QScrollBar::sub-line:vertical {
   width: 12px;
   subcontrol-position: top;
   subcontrol-origin: margin;
-  background-color: #2d2d2d;
 }
 
 QScrollBar::sub-line:vertical:hover, QScrollBar::sub-line:vertical:on {
