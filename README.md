@@ -14,7 +14,7 @@ You will need python v3 installed
 cd D:\dev\QDarkStyleSheet
 pip install -e .
 
-
+# to build
 python scripts/process_qrc.py & python example/example.py 
 ```
 
