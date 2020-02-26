@@ -44,6 +44,7 @@ class Ui_DockWidget(object):
         self.listWidget = QtWidgets.QListWidget(self.dockWidgetContents)
         self.listWidget.setMinimumSize(QtCore.QSize(0, 0))
         self.listWidget.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.listWidget.setAlternatingRowColors(True)
         self.listWidget.setObjectName("listWidget")
         item = QtWidgets.QListWidgetItem()
         self.listWidget.addItem(item)

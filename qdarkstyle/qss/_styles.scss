@@ -890,7 +890,7 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qframe
 
 --------------------------------------------------------------------------- */
 QLabel {
-    background-color: $COLOR_BACKGROUND_NORMAL;
+    background-color: none;
     border: 0px solid $COLOR_BACKGROUND_DARK;
     padding: 2px;
     margin: 0px;
@@ -1027,7 +1027,7 @@ QPushButton {
     color: $COLOR_FOREGROUND_LIGHT;
     border-radius: $SIZE_BORDER_RADIUS;
     font: bold;
-    padding: 3px;
+    padding: 3px 15px;
     outline: none;
     /* Issue #194 - Special case of QPushButton inside dialogs, for better UI */
     min-width: 80px;
@@ -1229,7 +1229,7 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qcombobox
 --------------------------------------------------------------------------- */
 QComboBox {
     border: $BORDER_NORMAL;
-    border-radius: $SIZE_BORDER_RADIUS;
+    border-radius: 0;
     selection-background-color: $COLOR_SELECTION_NORMAL;
     background: $COLOR_FOREGROUND_DARK;
     padding-left: 4px;
@@ -1246,6 +1246,10 @@ QComboBox {
     /*
     https://stackoverflow.com/questions/13308341/qcombobox-abstractitemviewitem
     */
+
+    &::item {
+        min-height: 20px;
+    }
     QAbstractItemView::item {
         min-height: 20px;
     }
@@ -1254,13 +1258,14 @@ QComboBox {
         border: 1 px solid $BORDER_NORMAL;
         border-radius: 0;
         background-color: $COLOR_FOREGROUND_DARK;
-        selection-background-color:  $COLOR_SELECTION_LIGHTEST;
+        selection-background-color:  $COLOR_SELECTION_LIGHT;
         min-height: 12px;
-
+        /*
         &:hover {
             background-color: $COLOR_FOREGROUND_DARK;
             color: $COLOR_FOREGROUND_LIGHT;
         }
+        */
 
         &:selected {
             background: $COLOR_FOREGROUND_DARK;
@@ -1307,8 +1312,6 @@ QComboBox {
     }
 
     &::item {
-        min-height: 12px;
-
         &:alternate {
             background: $COLOR_FOREGROUND_DARK;
         }
@@ -1470,16 +1473,16 @@ QLineEdit {
         color: $COLOR_FOREGROUND_DARK;
     }
 
-    &:hover {
+    &:hover:!read-only {
         border: $BORDER_SELECTION_LIGHT;
         color: $COLOR_FOREGROUND_LIGHT;
     }
 
-    &:focus {
+    &:focus:!read-only {
         border: $BORDER_SELECTION_NORMAL;
     }
 
-    &:selected {
+    &:selected:!read-only {
         background-color: $COLOR_SELECTION_NORMAL;
         color: $COLOR_BACKGROUND_DARK;
     }
@@ -1502,10 +1505,8 @@ QTabWidget {
         border-radius: $SIZE_BORDER_RADIUS;
     }
     QTabBar {
-        min-width: 100%;
         padding: 4px;
     }
-
     &::pane {
         border: $BORDER_DARK;
         border-radius: $SIZE_BORDER_RADIUS;
@@ -1654,26 +1655,29 @@ QTabBar {
             &:selected {
                 background-color: $COLOR_BACKGROUND_NORMAL;
                 color: $COLOR_FOREGROUND_LIGHT;
-                border: 1px solid $COLOR_BACKGROUND_DARK;
-                border-bottom: none;
-                /*
-                border-bottom: 3px solid $COLOR_SELECTION_NORMAL;
-                */
                 border-top-left-radius: 3px;
                 border-top-right-radius: 3px;
             }
+            &:selected:pressed {
+                border: $BORDER_SELECTION_LIGHT;
+                border-bottom: none;
+            }
+            &:selected:!pressed {
+                border: 1px solid $COLOR_BACKGROUND_DARK;
+                border-bottom: none;
+            }
 
             &:!selected:hover {
-                /*
-                border: 1px solid $BORDER_SELECTION_LIGHT;
-                border-bottom: 3px solid $COLOR_SELECTION_LIGHT;
-                */
+                border: $BORDER_SELECTION_NORMAL;
+                border-bottom: none;
+
+                color: $COLOR_FOREGROUND_LIGHT;
 
                 /* Fixes spyder-ide/spyder#9766 */
-                color: $COLOR_FOREGROUND_LIGHT;
-                padding-left: 4px;
-                padding-right: 4px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
+
         }
 
         &:bottom {
@@ -1939,29 +1943,30 @@ QTreeView,
 QListView,
 QTableView,
 QColumnView {
-    background-color: $COLOR_BACKGROUND_NORMAL;
+    background-color: $COLOR_BACKGROUND_DARK;
     border: $BORDER_DARK;
     color: $COLOR_FOREGROUND_LIGHT;
     gridline-color: $COLOR_BACKGROUND_DARK;
     border-radius: $SIZE_BORDER_RADIUS;
+    background: $COLOR_BACKGROUND_MID;
+    alternate-background-color: $COLOR_BACKGROUND_NORMAL;
 
     &:disabled {
         background-color: $COLOR_BACKGROUND_NORMAL;
         color: $COLOR_FOREGROUND_DARK;
     }
-
     &:selected {
         background-color: $COLOR_SELECTION_NORMAL;
         color: $COLOR_BACKGROUND_DARK;
     }
-
+    /*
     &:hover {
-        background-color: $COLOR_BACKGROUND_NORMAL;
+        background-color: $COLOR_BACKGROUND_DARK;
         border: $BORDER_SELECTION_LIGHT;
     }
+    */
 
     &::item {
-
         &:pressed {
             background-color: $COLOR_SELECTION_NORMAL;
         }
