@@ -20,7 +20,7 @@ python scripts/process_qrc.py & python example/example.py
 ```
 
 
-===============
+
 |Build Status| |Docs Status| |Latest PyPI version| |License: MIT|
 |License: CC BY 4.0| |Conduct|
 
@@ -29,39 +29,35 @@ PySide2, PyQt4, PyQt5, QtPy, PyQtGraph, Qt.Py).
 
 
 
-Installation
-------------
+#Installation
 
 
-Python
-~~~~~~
+### Python
+
 
 From PyPI: Get the latest stable version of ``qdarkstyle`` package using
 *pip* (preferable):
-
-    .. code:: bash
+```bash
 
         pip install qdarkstyle
-
+```
 
 From code: Download/clone the project, go to ``qdarkstyle`` folder then:
 
 -  You can use the *setup* script and pip install.
-
-    .. code:: bash
+```bash
 
         pip install .
-
+```
 
 -  Or, you can use the *setup* script with Python:
-
-    .. code:: bash
+```bash
 
         python setup.py install
+```
 
+### C++
 
-C++
-~~~
 
 -  Download/clone the project and copy the following files to your
    application directory (keep the existing directory hierarchy):
@@ -73,14 +69,14 @@ C++
 
 -  Add **qdarkstyle/style.qrc** to your **.pro file** as follows:
 
-    .. code:: c++
+```c++
 
         RESOURCES += qdarkstyle/style.qrc
-
+```
 
 -  Load the stylesheet:
 
-    .. code:: c++
+```c++
 
         QFile f(":qdarkstyle/style.qss");
 
@@ -92,20 +88,20 @@ C++
             QTextStream ts(&f);
             qApp->setStyleSheet(ts.readAll());
         }
-
+```
 
 Note: The ":" in the file name is necessary to define that file as a
 resource library. For more information see the discussion
 `here <https://github.com/ColinDuquesnoy/QDarkStyleSheet/pull/87>`__.
 
 
-Usage
------
+##Usage
+
 
 If your project already uses QtPy or you need to set it programmatically,
 it is far more simple
 
-.. code:: python
+```python
 
     import sys
     import qdarkstyle
@@ -131,11 +127,11 @@ it is far more simple
     # run
     window.show()
     app.exec_()
-
+```
 
 If you are using PyQt5 directly, see the complete example
 
-.. code:: python
+```python
 
     import sys
     import qdarkstyle
@@ -153,11 +149,11 @@ If you are using PyQt5 directly, see the complete example
     # run
     window.show()
     app.exec_()
-
+```
 
 Here is an example using PySide2
 
-.. code:: python
+```python
 
     import sys
     import qdarkstyle
@@ -175,11 +171,11 @@ Here is an example using PySide2
     # run
     window.show()
     app.exec_()
-
+```
 
 If you use PyQtGraph, then the code is
 
-.. code:: python
+```python
 
     import sys
     import qdarkstyle
@@ -203,6 +199,7 @@ If you use PyQtGraph, then the code is
     # run
     window.show()
     app.exec_()
+```
 
 If you are using Qt.py, which is different from qtpy, you should install
 qtpy then set both to the same binding.
@@ -213,8 +210,7 @@ script without installing qdarkstyle. You only need to have PySide or
 PySide2 or PyQt4 or PyQt5 installed on your system.*
 
 
-What is new?
-------------
+## What is new?
 
 In the version 2.6 and later, a reestructure stylesheet is provided. The
 palette has only 9 colors. Most widgets are revised and their styles
@@ -230,8 +226,8 @@ From 2.8, we moved to QtPy to simplify your code, thus this is a
 required dependency now.
 
 
-Screenshots
------------
+## Screenshots
+
 
 Here are a few snapshots comparing the use of QDarkStyle and the
 default style. Click in the image to zoom.
