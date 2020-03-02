@@ -1,11 +1,12 @@
 QDarkStylesheet
 ===============
 
-|Build Status| |Docs Status| |Latest PyPI version| |License: MIT|
-|License: CC BY 4.0| |Conduct|
+Fork of the QDarkStylesheet with a color scheme for VFX art applications, similar to Maya and Nuke.
 
-The most complete dark stylesheet for Qt application (Qt4, Qt5, PySide,
-PySide2, PyQt4, PyQt5, QtPy, PyQtGraph, Qt.Py).
+![Test Image 1](https://raw.githubusercontent.com/jamscott123/QDarkStyleSheet/master/example/Example.png)
+
+
+
 
 ## Building the code
 You will need python v3 installed
@@ -17,6 +18,15 @@ pip install -e .
 # to build
 python scripts/process_qrc.py & python example/example.py 
 ```
+
+
+===============
+|Build Status| |Docs Status| |Latest PyPI version| |License: MIT|
+|License: CC BY 4.0| |Conduct|
+
+The most complete dark stylesheet for Qt application (Qt4, Qt5, PySide,
+PySide2, PyQt4, PyQt5, QtPy, PyQtGraph, Qt.Py).
+
 
 
 Installation
