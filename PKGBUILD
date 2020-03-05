@@ -1,12 +1,12 @@
 # Submitter: Colin Duquesnoy <colin.duquesnoy@gmail.com>
 # Maintainer: Colin Duquesnoy <colin.duquesnoy@gmail.com>
-pkgbase=python-qdarkstyle
-pkgname=('python2-qdarkstyle' 'python-qdarkstyle')
+pkgbase=python-jam_darkstyle
+pkgname=('python2-jam_darkstyle' 'python-jam_darkstyle')
 pkgver=1.16
 _pkgver=1.16
 pkgrel=1
 arch=('any')
-url="https://github.com/davidhalter/qdarkstyle"
+url="https://github.com/davidhalter/jam_darkstyle"
 license=('MIT')
 depends=('python2')
 makedepends=('python2-setuptools' 'python-setuptools')
@@ -17,7 +17,7 @@ build() {
    cd "$srcdir/QDarkStyle-${_pkgver}"
 }
 
-package_python-qdarkstyle() {
+package_python-jam_darkstyle() {
     pkgdesc="A dark stylesheet for pyside/pyqt applications"
     depends=('python')
     cd "$srcdir/QDarkStyle-${_pkgver}"
@@ -26,7 +26,7 @@ package_python-qdarkstyle() {
     install -D -m644 "$srcdir/QDarkStyle-${_pkgver}/COPYING" $pkgdir/usr/share/licenses/$pkgname/LICENSE
 }
 
-package_python2-qdarkstyle() {
+package_python2-jam_darkstyle() {
     pkgdesc="A dark stylesheet for pyside/pyqt applications"
     depends=('python2')
     cd "$srcdir/QDarkStyle-${_pkgver}"

@@ -3,7 +3,7 @@
 
 # package info
 ppa="ppa:colin-duquesnoy/stable"
-name="qdarkstyle"
+name="jam_darkstyle"
 version="2.0"
 
 # read pgp key from gpg_key file

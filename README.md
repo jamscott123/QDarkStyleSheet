@@ -17,6 +17,9 @@ pip install -e .
 
 # to build
 python scripts/process_qrc.py & python example/example.py 
+
+# and then copy to the build/lib/qdarkside directory
+python setup.py build
 ```
 
 
@@ -35,14 +38,14 @@ PySide2, PyQt4, PyQt5, QtPy, PyQtGraph, Qt.Py).
 ### Python
 
 
-From PyPI: Get the latest stable version of ``qdarkstyle`` package using
+From PyPI: Get the latest stable version of ``jam_darkstyle`` package using
 *pip* (preferable):
 ```bash
 
-        pip install qdarkstyle
+        pip install jam_darkstyle
 ```
 
-From code: Download/clone the project, go to ``qdarkstyle`` folder then:
+From code: Download/clone the project, go to ``jam_darkstyle`` folder then:
 
 -  You can use the *setup* script and pip install.
 ```bash
@@ -62,23 +65,23 @@ From code: Download/clone the project, go to ``qdarkstyle`` folder then:
 -  Download/clone the project and copy the following files to your
    application directory (keep the existing directory hierarchy):
 
-    -  **qdarkstyle/style.qss**
-    -  **qdarkstyle/style.qrc**
-    -  **qdarkstyle/rc/** (the whole directory)
+    -  **jam_darkstyle/style.qss**
+    -  **jam_darkstyle/style.qrc**
+    -  **jam_darkstyle/rc/** (the whole directory)
 
 
--  Add **qdarkstyle/style.qrc** to your **.pro file** as follows:
+-  Add **jam_darkstyle/style.qrc** to your **.pro file** as follows:
 
 ```c++
 
-        RESOURCES += qdarkstyle/style.qrc
+        RESOURCES += jam_darkstyle/style.qrc
 ```
 
 -  Load the stylesheet:
 
 ```c++
 
-        QFile f(":qdarkstyle/style.qss");
+        QFile f(":jam_darkstyle/style.qss");
 
         if (!f.exists())   {
             printf("Unable to set stylesheet, file not found\n");
@@ -104,7 +107,7 @@ it is far more simple
 ```python
 
     import sys
-    import qdarkstyle
+    import jam_darkstyle
     import os
 
     # set the environment variable to use a specific wrapper
@@ -121,8 +124,8 @@ it is far more simple
     window = QtWidgets.QMainWindow()
 
     # setup stylesheet
-    # the default system in qdarkstyle uses qtpy environment variable
-    app.setStyleSheet(qdarkstyle.load_stylesheet())
+    # the default system in jam_darkstyle uses qtpy environment variable
+    app.setStyleSheet(jam_darkstyle.load_stylesheet())
 
     # run
     window.show()
@@ -134,7 +137,7 @@ If you are using PyQt5 directly, see the complete example
 ```python
 
     import sys
-    import qdarkstyle
+    import jam_darkstyle
     from PyQt5 import QtWidgets
 
     # create the application and the main window
@@ -142,9 +145,9 @@ If you are using PyQt5 directly, see the complete example
     window = QtWidgets.QMainWindow()
 
     # setup stylesheet
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+    app.setStyleSheet(jam_darkstyle.load_stylesheet_pyqt5())
     # or in new API
-    app.setStyleSheet(qdarkstyle.load_stylesheet(qt_api='pyqt5'))
+    app.setStyleSheet(jam_darkstyle.load_stylesheet(qt_api='pyqt5'))
 
     # run
     window.show()
@@ -156,7 +159,7 @@ Here is an example using PySide2
 ```python
 
     import sys
-    import qdarkstyle
+    import jam_darkstyle
     from PyQt5 import QtWidgets
 
     # create the application and the main window
@@ -164,9 +167,9 @@ Here is an example using PySide2
     window = QtWidgets.QMainWindow()
 
     # setup stylesheet
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyside2())
+    app.setStyleSheet(jam_darkstyle.load_stylesheet_pyside2())
     # or in new API
-    app.setStyleSheet(qdarkstyle.load_stylesheet(qt_api='pyside2'))
+    app.setStyleSheet(jam_darkstyle.load_stylesheet(qt_api='pyside2'))
 
     # run
     window.show()
@@ -178,7 +181,7 @@ If you use PyQtGraph, then the code is
 ```python
 
     import sys
-    import qdarkstyle
+    import jam_darkstyle
     import os
 
     # set the environment variable to use a specific wrapper
@@ -194,7 +197,7 @@ If you use PyQtGraph, then the code is
     window = QtGui.QMainWindow()
 
     # setup stylesheet
-    app.setStyleSheet(qdarkstyle.load_stylesheet(qt_api=os.environ['PYQTGRAPH_QT_LIB'])
+    app.setStyleSheet(jam_darkstyle.load_stylesheet(qt_api=os.environ['PYQTGRAPH_QT_LIB'])
 
     # run
     window.show()
@@ -206,7 +209,7 @@ qtpy then set both to the same binding.
 
 
 *There is an example included in the *example* folder. You can run the
-script without installing qdarkstyle. You only need to have PySide or
+script without installing jam_darkstyle. You only need to have PySide or
 PySide2 or PyQt4 or PyQt5 installed on your system.*
 
 

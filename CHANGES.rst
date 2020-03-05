@@ -13,7 +13,7 @@ Changelog
     -  Enhance QSplitter #207
     -  Removed QStatusBar vertical lines #205
 -  2.7:
-    -  Remove utils from import in qdarkstyle, #170
+    -  Remove utils from import in jam_darkstyle, #170
     -  Fix border colors in tool button #176
     -  Fix scroll area and stacked with 2px padding, #159
     -  Fix backgroung submenu color, #179

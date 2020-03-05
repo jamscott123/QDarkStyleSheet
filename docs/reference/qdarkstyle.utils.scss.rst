@@ -1,7 +1,7 @@
-qdarkstyle.utils.scss module
+jam_darkstyle.utils.scss module
 ============================
 
-.. automodule:: qdarkstyle.utils.scss
+.. automodule:: jam_darkstyle.utils.scss
    :members:
    :undoc-members:
    :show-inheritance:

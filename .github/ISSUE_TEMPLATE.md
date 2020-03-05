@@ -4,7 +4,7 @@
 
 Please, report the output of the command (from v2.6+) or fill the information below:
 
-`$ qdarkstyle --all`
+`$ jam_darkstyle --all`
 
 Or use the helpdev if you have
 

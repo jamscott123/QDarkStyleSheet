@@ -1,7 +1,7 @@
-qdarkstyle package
+jam_darkstyle package
 ==================
 
-.. automodule:: qdarkstyle
+.. automodule:: jam_darkstyle
    :members:
    :undoc-members:
    :show-inheritance:
@@ -11,13 +11,13 @@ Subpackages
 
 .. toctree::
 
-   qdarkstyle.utils
+   jam_darkstyle.utils
 
 Submodules
 ----------
 
 .. toctree::
 
-   qdarkstyle.__main__
-   qdarkstyle.palette
-   qdarkstyle.style_rc
+   jam_darkstyle.__main__
+   jam_darkstyle.palette
+   jam_darkstyle.style_rc

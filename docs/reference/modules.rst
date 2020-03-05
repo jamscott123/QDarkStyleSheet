@@ -1,7 +1,7 @@
-qdarkstyle
+jam_darkstyle
 ==========
 
 .. toctree::
    :maxdepth: 4
 
-   qdarkstyle
+   jam_darkstyle

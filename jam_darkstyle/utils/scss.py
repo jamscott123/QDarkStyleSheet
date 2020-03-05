@@ -14,11 +14,11 @@ import sys
 import qtsass
 
 # Local imports
-from qdarkstyle import (MAIN_SCSS_FILE, MAIN_SCSS_FILEPATH, QSS_PATH,
+from jam_darkstyle import (MAIN_SCSS_FILE, MAIN_SCSS_FILEPATH, QSS_PATH,
                         QSS_FILEPATH, RC_PATH, QSS_FILE,
                         VARIABLES_SCSS_FILE, VARIABLES_SCSS_FILEPATH)
-from qdarkstyle.palette import DarkPalette
-from qdarkstyle.utils.images import create_images, create_palette_image
+from jam_darkstyle.palette import DarkPalette
+from jam_darkstyle.utils.images import create_images, create_palette_image
 
 # Constants
 PY2 = sys.version[0] == '2'
@@ -27,7 +27,7 @@ HEADER_SCSS = '''// ------------------------------------------------------------
 //
 //    File created programmatically
 //
-//    The definitions are in the "qdarkstyle.palette" module
+//    The definitions are in the "jam_darkstyle.palette" module
 //
 //    WARNING! All changes made in this file will be lost!
 //
@@ -38,7 +38,7 @@ HEADER_QSS = '''/* -------------------------------------------------------------
 
     Created by the qtsass compiler v{}
 
-    The definitions are in the "qdarkstyle.qss._styles.scss" module
+    The definitions are in the "jam_darkstyle.qss._styles.scss" module
 
     WARNING! All changes made in this file will be lost!
 

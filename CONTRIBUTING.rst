@@ -49,8 +49,8 @@ These are the basic steps needed to start developing on QDarkStyle.
 
    .. code:: bash
 
-          git clone https://github.com/USERNAME/qdarkstyle
-          cd qdarkstyle
+          git clone https://github.com/USERNAME/jam_darkstyle
+          cd jam_darkstyle
 
 -  Checkout the appropriate branch
 
@@ -212,7 +212,7 @@ PyQtGraph.
 Modifying QSS File
 ~~~~~~~~~~~~~~~~~~
 
-If you are changing the `stylesheet <./qdarkstyle/style.qss>`__, you
+If you are changing the `stylesheet <./jam_darkstyle/style.qss>`__, you
 will need to recompile the QRC files using
 `process\_qrc.py <./script/process_qrc.py>`__ script, inside script
 folder.
@@ -368,11 +368,11 @@ maintainer in both.
 
 5. Try to install from test
 
-   ``pip install --no-deps --index-url https://test.pypi.org/simple/ qdarkstyle``
+   ``pip install --no-deps --index-url https://test.pypi.org/simple/ jam_darkstyle``
 
 6. Then, remove it
 
-   ``pip uninstall qdarkstyle -y``
+   ``pip uninstall jam_darkstyle -y``
 
 7. Upload to `PyPI official
    page <https://pypi.python.org/pypi/QDarkStyle>`__
@@ -381,7 +381,7 @@ maintainer in both.
 
 8. Try to install from oficial
 
-   ``pip install qdarkstyle``
+   ``pip install jam_darkstyle``
 
 You can also use the tox environment to produce the release and upload
 the distribution.

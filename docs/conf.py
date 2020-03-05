@@ -17,7 +17,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
-import qdarkstyle
+import jam_darkstyle
 import os
 import sys
 
@@ -65,7 +65,7 @@ author = 'Colin Duquesnoy'
 # built documents.
 #
 # The short X.Y version.
-version = qdarkstyle.__version__
+version = jam_darkstyle.__version__
 # The full version, including alpha/beta/rc tags.
 release = ''
 
@@ -159,7 +159,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'qdarkstyle', 'QDarkStyle Documentation',
+    (master_doc, 'jam_darkstyle', 'QDarkStyle Documentation',
      [author], 1)
 ]
 

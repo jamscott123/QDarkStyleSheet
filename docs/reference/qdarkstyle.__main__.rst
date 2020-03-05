@@ -1,7 +1,7 @@
-qdarkstyle.\_\_main\_\_ module
+jam_darkstyle.\_\_main\_\_ module
 ==============================
 
-.. automodule:: qdarkstyle.__main__
+.. automodule:: jam_darkstyle.__main__
    :members:
    :undoc-members:
    :show-inheritance:

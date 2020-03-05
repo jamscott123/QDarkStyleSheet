@@ -1,7 +1,7 @@
-qdarkstyle.style\_rc module
+jam_darkstyle.style\_rc module
 ===========================
 
-.. automodule:: qdarkstyle.style_rc
+.. automodule:: jam_darkstyle.style_rc
    :members:
    :undoc-members:
    :show-inheritance:

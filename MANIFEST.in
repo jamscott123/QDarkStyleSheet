@@ -1,4 +1,4 @@
-#
+
 # MANIFEST.in
 #
 # Manifest template for creating the PyLudic source distribution.
@@ -10,4 +10,4 @@ include CHANGES.rst
 include CONTRIBUTING.rst
 include LICENSE.rst
 include README.rst
-include qdarkstyle/*
+include jam_darkstyle/*

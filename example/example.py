@@ -1,7 +1,7 @@
 #!python
 # -*- coding: utf-8 -*-
 
-"""Example of qdarkstyle use for Python and Qt applications.
+"""Example of jam_darkstyle use for Python and Qt applications.
 
 This module a main window with every item that could be created with
 Qt Design (common ones) in the basic states (enabled/disabled), and
@@ -34,7 +34,7 @@ Also, you can run the example without dark theme (no_dark), to check for problem
     python example.py  --qt_from=pyqt5 --no_dark
 
 Note:
-    qdarkstyle does not have to be installed to run the example.
+    jam_darkstyle does not have to be installed to run the example.
 
 """
 
@@ -51,14 +51,14 @@ import time
 sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + '/..'))
 sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + '/ui'))
 # Must be in this place, after setting path, to not need to install
-import qdarkstyle
+import jam_darkstyle
 
 # Set log for debug
 logging.basicConfig(level=logging.DEBUG)
 _logger = logging.getLogger(__name__)
 
 # Constants
-SCREENSHOTS_PATH = qdarkstyle.IMAGES_PATH
+SCREENSHOTS_PATH = jam_darkstyle.IMAGES_PATH
 
 
 def main():
@@ -69,7 +69,7 @@ def main():
                         choices=['pyqt5', 'pyqt', 'pyside2', 'pyside', 'qtpy', 'pyqtgraph', 'qt.py'],
                         help="Choose which binding and/or abstraction is to be used to run the example.")
     parser.add_argument('--no_dark', action='store_true',
-                        help="Exihibts the original window (without qdarkstyle).")
+                        help="Exihibts the original window (without jam_darkstyle).")
     parser.add_argument('--test', action='store_true',
                         help="Auto close window after 2s.")
     parser.add_argument('--reset', action='store_true',
@@ -135,7 +135,7 @@ def main():
     style = ''
 
     if not args.no_dark:
-        style = qdarkstyle.load_stylesheet()
+        style = jam_darkstyle.load_stylesheet()
 
     app.setStyleSheet(style)
 
@@ -147,7 +147,7 @@ def main():
     ui.setupUi(window)
 
     title = ("QDarkStyle Example - " +
-             "(QDarkStyle=v" + qdarkstyle.__version__ +
+             "(QDarkStyle=v" + jam_darkstyle.__version__ +
              ", QtPy=v" + QTPY_VERSION +
              ", " + API_NAME + "=v" + API_VERSION +
              ", Qt=v" + QT_VERSION +

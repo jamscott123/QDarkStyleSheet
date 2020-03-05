@@ -18,9 +18,9 @@ from qtpy.QtGui import QIcon
 from qtpy.QtWidgets import QApplication
 
 # Local imports
-from qdarkstyle import (IMAGES_PATH, STYLES_SCSS_FILEPATH, QRC_FILEPATH, RC_PATH,
+from jam_darkstyle import (IMAGES_PATH, STYLES_SCSS_FILEPATH, QRC_FILEPATH, RC_PATH,
                         SVG_PATH)
-from qdarkstyle.palette import DarkPalette
+from jam_darkstyle.palette import DarkPalette
 
 IMAGE_BLACKLIST = ['base_palette']
 
@@ -102,7 +102,10 @@ def create_palette_image(base_svg_path=SVG_PATH, path=IMAGES_PATH,
     Create palette image svg and png image on specified path.
     """
     # Needed to use QPixmap
-    _ = QApplication([])
+    try:
+        _ = QApplication([])
+    except:
+        pass
 
     base_palette_svg_path = os.path.join(base_svg_path, 'base_palette.svg')
     palette_svg_path = os.path.join(path, 'palette.svg')
@@ -144,7 +147,10 @@ def create_images(base_svg_path=SVG_PATH, rc_path=RC_PATH,
     """
 
     # Needed to use QPixmap
-    _ = QApplication([])
+    try:
+        _ = QApplication([])
+    except:
+        pass
 
     temp_dir = tempfile.mkdtemp()
     svg_fnames = [f for f in os.listdir(base_svg_path) if f.endswith('.svg')]
@@ -220,7 +226,8 @@ def create_images(base_svg_path=SVG_PATH, rc_path=RC_PATH,
     _logger.info("RC links not in RC: %s" % rc_list)
 
 
-def generate_qrc_file(resource_prefix='qss_icons', style_prefix='qdarkstyle'):
+
+def generate_qrc_file(resource_prefix='qss_icons', style_prefix='jam_darkstyle'):
     """
     Generate the QRC file programmaticaly.
 
@@ -230,7 +237,7 @@ def generate_qrc_file(resource_prefix='qss_icons', style_prefix='qdarkstyle'):
         resource_prefix (str, optional): Prefix used in resources.
             Defaults to 'qss_icons'.
         style_prefix (str, optional): Prefix used to this style.
-            Defaults to 'qdarkstyle'.
+            Defaults to 'jam_darkstyle'.
     """
 
     files = []

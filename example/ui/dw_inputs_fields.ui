@@ -160,7 +160,7 @@
         <string>Option 1 With Icon</string>
        </property>
        <property name="icon">
-        <iconset resource="../../qdarkstyle/style.qrc">
+        <iconset resource="../../jam_darkstyle/style.qrc">
          <normaloff>:/qss_icons/rc/window_undock.png</normaloff>:/qss_icons/rc/window_undock.png</iconset>
        </property>
       </item>
@@ -169,7 +169,7 @@
         <string>Option 2 With Icon</string>
        </property>
        <property name="icon">
-        <iconset resource="../../qdarkstyle/style.qrc">
+        <iconset resource="../../jam_darkstyle/style.qrc">
          <normaloff>:/qss_icons/rc/window_undock_focus@2x.png</normaloff>:/qss_icons/rc/window_undock_focus@2x.png</iconset>
        </property>
       </item>
@@ -979,7 +979,7 @@ p, li { white-space: pre-wrap; }
   </widget>
  </widget>
  <resources>
-  <include location="../../qdarkstyle/style.qrc"/>
+  <include location="../../jam_darkstyle/style.qrc"/>
  </resources>
  <connections>
   <connection>

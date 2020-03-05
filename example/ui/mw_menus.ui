@@ -440,7 +440,7 @@
   </action>
   <action name="actionAction_with_icon_A">
    <property name="icon">
-    <iconset resource="../../qdarkstyle/style.qrc">
+    <iconset resource="../../jam_darkstyle/style.qrc">
      <normaloff>:/qss_icons/rc/window_undock_focus.png</normaloff>:/qss_icons/rc/window_undock_focus.png</iconset>
    </property>
    <property name="text">
@@ -449,7 +449,7 @@
   </action>
   <action name="actionAction_With_Icon_B">
    <property name="icon">
-    <iconset resource="../../qdarkstyle/style.qrc">
+    <iconset resource="../../jam_darkstyle/style.qrc">
      <normaloff>:/qss_icons/rc/window_close_focus.png</normaloff>:/qss_icons/rc/window_close_focus.png</iconset>
    </property>
    <property name="text">
@@ -458,7 +458,7 @@
   </action>
   <action name="actionAction_With_Icon_C">
    <property name="icon">
-    <iconset resource="../../qdarkstyle/style.qrc">
+    <iconset resource="../../jam_darkstyle/style.qrc">
      <normaloff>:/qss_icons/rc/arrow_right_focus.png</normaloff>:/qss_icons/rc/arrow_right_focus.png</iconset>
    </property>
    <property name="text">
@@ -472,7 +472,7 @@
   <tabstop>lineEdit_2</tabstop>
  </tabstops>
  <resources>
-  <include location="../../qdarkstyle/style.qrc"/>
+  <include location="../../jam_darkstyle/style.qrc"/>
  </resources>
  <connections/>
 </ui>

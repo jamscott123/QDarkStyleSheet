@@ -289,7 +289,7 @@
        <string>Icon</string>
       </property>
       <property name="icon">
-       <iconset resource="../../qdarkstyle/style.qrc">
+       <iconset resource="../../jam_darkstyle/style.qrc">
         <normaloff>:/qss_icons/rc/window_undock@2x.png</normaloff>:/qss_icons/rc/window_undock@2x.png</iconset>
       </property>
      </widget>
@@ -364,7 +364,7 @@
        <string>Icon Checked</string>
       </property>
       <property name="icon">
-       <iconset resource="../../qdarkstyle/style.qrc">
+       <iconset resource="../../jam_darkstyle/style.qrc">
         <normaloff>:/qss_icons/rc/window_undock.png</normaloff>:/qss_icons/rc/window_undock.png</iconset>
       </property>
       <property name="checkable">
@@ -1128,7 +1128,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../../qdarkstyle/style.qrc"/>
+  <include location="../../jam_darkstyle/style.qrc"/>
  </resources>
  <connections>
   <connection>

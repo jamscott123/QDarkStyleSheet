@@ -1,7 +1,7 @@
-qdarkstyle.utils.images module
+jam_darkstyle.utils.images module
 ==============================
 
-.. automodule:: qdarkstyle.utils.images
+.. automodule:: jam_darkstyle.utils.images
    :members:
    :undoc-members:
    :show-inheritance:

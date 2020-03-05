@@ -10,7 +10,7 @@ First, start importing our module
 
 .. code-block:: python
 
-    import qdarkstyle
+    import jam_darkstyle
 
 Then you can get stylesheet provided by QDarkStyle for various Qt wrappers
 as shown below
@@ -18,24 +18,24 @@ as shown below
 .. code-block:: python
 
     # PySide
-    dark_stylesheet = qdarkstyle.load_stylesheet_pyside()
+    dark_stylesheet = jam_darkstyle.load_stylesheet_pyside()
     # PySide 2
-    dark_stylesheet = qdarkstyle.load_stylesheet_pyside2()
+    dark_stylesheet = jam_darkstyle.load_stylesheet_pyside2()
     # PyQt4
-    dark_stylesheet = qdarkstyle.load_stylesheet_pyqt()
+    dark_stylesheet = jam_darkstyle.load_stylesheet_pyqt()
     # PyQt5
-    dark_stylesheet = qdarkstyle.load_stylesheet_pyqt5()
+    dark_stylesheet = jam_darkstyle.load_stylesheet_pyqt5()
 
 Alternatively, from environment variables provided by QtPy, PyQtGraph, Qt.Py
 
 .. code-block:: python
 
     # QtPy
-    dark_stylesheet = qdarkstyle.load_stylesheet()
+    dark_stylesheet = jam_darkstyle.load_stylesheet()
     # PyQtGraph
-    dark_stylesheet = qdarkstyle.load_stylesheet(qt_api=os.environ('PYQTGRAPH_QT_LIB'))
+    dark_stylesheet = jam_darkstyle.load_stylesheet(qt_api=os.environ('PYQTGRAPH_QT_LIB'))
     # Qt.Py
-    dark_stylesheet = qdarkstyle.load_stylesheet(qt_api=Qt.__binding__)
+    dark_stylesheet = jam_darkstyle.load_stylesheet(qt_api=Qt.__binding__)
 
 Finally, set your QApplication with it
 
@@ -54,7 +54,7 @@ import platform
 import warnings
 
 # Local imports
-from qdarkstyle.palette import DarkPalette
+from jam_darkstyle.palette import DarkPalette
 
 __version__ = "2.8"
 
@@ -65,7 +65,7 @@ REPO_PATH = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 
 EXAMPLE_PATH = os.path.join(REPO_PATH, 'example')
 IMAGES_PATH = os.path.join(REPO_PATH, 'images')
-PACKAGE_PATH = os.path.join(REPO_PATH, 'qdarkstyle')
+PACKAGE_PATH = os.path.join(REPO_PATH, 'jam_darkstyle')
 
 QSS_PATH = os.path.join(PACKAGE_PATH, 'qss')
 RC_PATH = os.path.join(PACKAGE_PATH, 'rc')
@@ -213,7 +213,7 @@ def _load_stylesheet(qt_api=''):
     from qtpy.QtGui import QColor, QPalette
 
     # Then we import resources - binary qrc content
-    from qdarkstyle import style_rc
+    from jam_darkstyle import style_rc
 
     # Thus, by importing the binary we can access the resources
     package_dir = os.path.basename(PACKAGE_PATH)
